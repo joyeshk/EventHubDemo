@@ -30,6 +30,14 @@
 `az_subs_id = "< Subscription ID>"`
 - create a plan to check how many resources will get created. $ terraform plan
 - create resources in Azure cloud. $ terraform apply
+- Terraform will display newly created resource group
+
+### Add roles to your Azure user
+- go to resource groups-> newly created resource group
+- click on Resource which is Event Hub Namespace-> Go to access control (IAM)
+- Click +Add->Add Role Assignment-> select _Azure Event Hubs Data Owner_ -> in the member tab, select your user -> Review+Assign
+- Go Back to Resource Group page-> Click on Resource which is Storage account-> Go to access control (IAM)
+- Click +Add->Add Role Assignment-> select _Storage Blob Data Contributor_ -> in the member tab, select your user -> Review+Assign
 
 ### Add resource names, connection strings to project config
 
